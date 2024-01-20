@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albetross Fitness</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /*CSS reset*/
+    body{
+        font-family: cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/gym1.jpg');
+        background-size: cover;
+    }
+    .left{
+        /*border: 3px solid red*/
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .mid{
+        display: block;
+        width: 600px;
+        margin: 20px auto;
+       /* border: 3px solid yellow;*/
+    }
+    .right{
+        /*border: 3px solid green;*/
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 14px;
+        padding: 13px 20px;
+    }
+    .navbar li a{
+        color: white;
+    }
+    .navbar li a:hover{
+        color: gray;
+        text-decoration: underline;
+        padding: 3px 3px;
+    }
+    .btn{
+        font-family: cursive;
+        margin: 0px 15px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid gray;
+        border-radius: 30px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 3px solid gray;
+        border-radius: 20px;
+        margin: 200px 200px;
+        padding: 40px 40px ;
+        width: 70%;
+    }
+    .formgroup input{
+        font-family: cursive;
+        border-radius: 20px;
+        text-align:  center;
+        display: block;
+        width: 300px;
+        margin: 11px auto;
+        padding: 10px;
+        border: 3px solid gray;
+
+    }
+    .container H1{
+        text-align: center;
+    }
+    .container button{
+        margin: auto;
+        display: block;
+        width: 23%;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+             <img src="img/logogym.png" alt="">
+             <div>ALBETROSS FITNESS</div>
+        </div>
+        <div class="mid">
+            <div class="navbar">
+               <li><a href="#">HOME</a></li>
+               <li><a href="#">ABOUT US</a></li>
+               <li><a href="#">FITNESS CALCULATOR</a></li>
+               <li><a href="#">CONTACT US</a></li>
+            </div>
+       </div>
+
+        
+        <div class="right">
+            <button class="btn">
+                Call us now
+            </button><button class="btn">
+                Email us now
+            </button>
+        </div>
+    </header>
+    <div class="container">
+        <H1>JOIN THE BEST GYM OF PUNE</H1>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="ENTER YOUR AGE">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="ENTER YOUR GENDER">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="ENTER YOUR MOBILE NO.">
+            </div>
+            <div class="formgroup">
+                <input type="text" name="" placeholder="ENTER YOUR EMAIL ID">
+            </div>
+        </form>
+        <button class="btn">SUBMIT</button>
+    </div>
+</body>
+</html>
